@@ -1,4 +1,5 @@
 import HeroSection from '@/components/HeroSection'
+import QuoteSection from '@/components/QuoteSection'
 import ContentTypeSelector from '@/components/ContentTypeSelector'
 import StressReliefSection from '@/components/StressReliefSection'
 import Navigation from '@/components/Navigation'
@@ -10,6 +11,7 @@ export default function Home() {
       <Navigation />
       <main className="pt-16">
         <HeroSection />
+        <QuoteSection />
         <ContentTypeSelector />
         <StressReliefSection />
       </main>

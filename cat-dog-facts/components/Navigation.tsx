@@ -34,6 +34,14 @@ export default function Navigation() {
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <Link 
+                  href="/quotes"
+                  className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+                >
+                  Quotes
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link 
                   href="/content"
                   className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
                 >
@@ -76,6 +84,13 @@ export default function Navigation() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
+              </Link>
+              <Link
+                href="/quotes"
+                className="block px-3 py-2 text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors duration-200"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Quotes
               </Link>
               <Link
                 href="/content"
