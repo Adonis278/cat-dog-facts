@@ -1,14 +1,19 @@
-import PetWidget from '../components/PetWidget'
+import HeroSection from '@/components/HeroSection'
+import ContentTypeSelector from '@/components/ContentTypeSelector'
+import StressReliefSection from '@/components/StressReliefSection'
+import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
-    <div className="space-y-6">
-      <header className="text-center">
-        <h1 className="text-3xl font-bold">Cat Facts + Dog Pics</h1>
-        <p className="text-sm text-gray-600">Random cat facts and random dog image</p>
-      </header>
-
-      <PetWidget />
+    <div className="min-h-screen bg-background">
+      <Navigation />
+      <main className="pt-16">
+        <HeroSection />
+        <ContentTypeSelector />
+        <StressReliefSection />
+      </main>
+      <Footer />
     </div>
-  )
+  );
 }

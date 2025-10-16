@@ -10,3 +10,73 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+
+@layer base {
+  :root {
+    /* Custom Motivation App Color Palette */
+    --background: 218 29% 98%; /* #F7FAFC */
+    --foreground: 220 26% 24%; /* #2D3748 */
+    --card: 214 32% 91%; /* #EDF2F7 */
+    --card-foreground: 220 26% 24%; /* #2D3748 */
+    --popover: 218 29% 98%; /* #F7FAFC */
+    --popover-foreground: 220 26% 24%; /* #2D3748 */
+    --primary: 234 78% 61%; /* #5A67D8 */
+    --primary-foreground: 0 0% 98%;
+    --secondary: 32 81% 67%; /* #F6AD55 */
+    --secondary-foreground: 220 26% 24%;
+    --muted: 214 32% 91%; /* #EDF2F7 */
+    --muted-foreground: 213 27% 56%; /* #718096 */
+    --accent: 234 78% 61%; /* #5A67D8 */
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214 32% 91%; /* #EDF2F7 */
+    --input: 214 32% 91%; /* #EDF2F7 */
+    --ring: 234 78% 61%; /* #5A67D8 */
+    --chart-1: 234 78% 61%; /* #5A67D8 */
+    --chart-2: 32 81% 67%; /* #F6AD55 */
+    --chart-3: 220 26% 24%; /* #2D3748 */
+    --chart-4: 213 27% 56%; /* #718096 */
+    --chart-5: 218 29% 98%; /* #F7FAFC */
+    --radius: 0.75rem;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
