@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
+  metadataBase: new URL('https://motivateme.app'),
   title: 'MotivateMe - Fuel Your Drive, Find Your Calm',
   description: 'Curated motivation for every moment—whether you need a spark or a breath. Discover posts, stories, videos, and stress relief tools.',
   keywords: 'motivation, mindfulness, stress relief, inspiration, mental wellness',
